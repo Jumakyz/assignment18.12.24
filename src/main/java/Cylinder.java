@@ -23,11 +23,11 @@ public class Cylinder {
         this.height = height;
     }
 
-    public double surfaceArea(double radius, double height) {
+    public double surfaceArea() {
         return 2 * 3.14 * radius * height;
     }
 
-    public double volume(double radius, double height) {
+    public double volume() {
         return 3.14 * radius * radius * height;
     }
 
