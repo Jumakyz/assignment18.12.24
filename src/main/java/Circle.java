@@ -12,15 +12,17 @@ public class Circle {
     public void setRadius(double radius) {
         this.radius = radius;
     }
-    public double circumference(double radius){
-        return 2*3.14*radius;
+    public double circumference(){
+        return  2 * Math.PI * radius;
     }
-    public double area(double radius){
-        return 3.14*radius*radius;
-    }
-    @Override
-    public String toString(){
-        return "Circle with radius:"+radius;
+    public double area(){
+        return Math.PI * Math.pow(radius,2);
     }
 
+    @Override
+    public String toString() {
+        return "Circle{" +
+                "radius=" + radius +
+                '}';
+    }
 }
